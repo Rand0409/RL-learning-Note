@@ -1,0 +1,14 @@
+首先第一件事情是安装anaconda；
+在安装anaconda(python3.7)的过程中，和原先windows之前装过的python发生了冲突，在环境变量的path里面，先被搜索到的是之前安装的没用的那个python，
+在cmd中打开python会得到的是Windows store的python下载页面。因此要将anaconda的path，里面script的path以及library/bin的path都放进去才可以。这个
+办法可以同样解决python不是内部也不是外部的问题，还有pip不是内部也不是外部的问题。添加path. 
+第二件是就是安装docker;
+在安装docker的时候，需要先搞定hyper-v，这是必须要满足的条件! 虽然在docker官网上，是写了有docker windows home edition，然而，即便通过修改注册
+列表里面的editionID,强行装上了docker,后面也会各种报错，连不上server。因此，还是要将windows home版本升级到pro版本，99刀，值得拥有。在这一升级中，
+C盘的数据不会丢失，只是一次普通的Windows升级。升级完成之后，enable hyperV即可，然后顺畅安装docker。
+第三件事是安装openAI gym和universe;
+这件事情是非常蛋疼的，openAi gym现在是完全支持windows pip安装的，且可以顺利调用；然后universe暂时还不支持wiondows，只能通过创立subsystem才可以，
+所以我没装，哈哈哈哈哈哈，懒的一笔。希望几年后universe也能像gym一样支持windows.
+再后面一件事就是安装tensorflow;
+这个好像没有遇到什么太大的问题，安装比较顺利。就是tensorflow升级过了，变成2.2版本了，从静态图到动态图了，很多东西都不太一样了，得研究研究。
+为了搞定这几件事情，折腾C盘折腾了几天。
